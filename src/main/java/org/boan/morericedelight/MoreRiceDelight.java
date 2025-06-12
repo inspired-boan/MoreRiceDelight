@@ -1,25 +1,22 @@
 package org.boan.morericedelight;
 
-import net.minecraft.network.chat.Component;
-import net.neoforged.bus.api.SubscribeEvent;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(MoreRiceDelight.MODID)
+@Mod(MoreRiceDelight.MOD_ID)
 public class MoreRiceDelight {
-    public static final String MODID = "morericedelight";
+    public static final String MOD_ID = "morericedelight";
 
 
-    public MoreRiceDelight() {
+    public MoreRiceDelight()
+    {
     }
 
-    @EventBusSubscriber(bus = EventBusSubscriber.Bus.GAME)
-    public static class PlayerLoggedInHandler {
-        @SubscribeEvent
-        public static void onLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-            var player = event.getEntity();
-            player.displayClientMessage(Component.literal("Welcome to more rice delight!"), true);
-        }
-    }
+
 }
