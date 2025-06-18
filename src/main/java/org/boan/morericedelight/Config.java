@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package org.boan.morericedelight;
 
 import java.util.List;
 import java.util.Set;

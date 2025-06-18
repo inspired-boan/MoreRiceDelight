@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "morericedelight:block/coal_sugar_cane"
+  }
+}
